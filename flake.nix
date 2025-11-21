@@ -24,13 +24,18 @@
     nixvim = {
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
-              };
+    };
+
+    lsfg-vk-flake = {
+        url = "github:pabloaul/lsfg-vk-flake/main";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
 
   };
 
   #inputs.ryujinx.url = "github:Naxdy/Ryujinx";
 
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, hyprland-plugins, split-monitor-workspaces, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, hyprland-plugins, split-monitor-workspaces, lsfg-vk-flake, ... }@inputs:
 
     let
       system = "x86_64-linux";
@@ -47,7 +52,8 @@
       };
       modules = [
         ./nixos/configuration.nix
-        inputs.nixvim.nixosModules.nixvim
+          inputs.nixvim.nixosModules.nixvim
+          lsfg-vk-flake.nixosModules.default
       ];
     };
 

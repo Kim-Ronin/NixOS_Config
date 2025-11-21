@@ -11,5 +11,6 @@
     ./bluetooth.nix
     ./OBS.nix
     ./nixvim/nixvim.nix
+    #./lsfg-vk.nix
   ];
 }
