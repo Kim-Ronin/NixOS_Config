@@ -2,10 +2,11 @@
   imports = [
     ./bootloader.nix
     ./sound.nix
-      ./env.nix
+    ./env.nix
     ./user.nix
     ./nm.nix
-     ./plasma.nix
+    ./plasma.nix
+    # ./fonts/electroharmonix/electroharmonix.nix
     ./sddm.nix
      ./hyprland.nix
     ./bluetooth.nix

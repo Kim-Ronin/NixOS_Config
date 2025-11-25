@@ -96,7 +96,6 @@ services.lsfg-vk = {
     lsfg-vk
     lsfg-vk-ui
     kdePackages.qt6ct
-    sddm-astronaut
     hyprland-qt-support
     protonplus
 
@@ -203,8 +202,12 @@ services.lsfg-vk = {
     # Other
     home-manager
     papirus-nord
+    kdePackages.plasma-keyboard
 
-
+    #sddm theme
+    (sddm-astronaut.override {
+    embeddedTheme = "japanese_aesthetic";
+  })
 
 
     #########
@@ -221,8 +224,10 @@ services.lsfg-vk = {
     powerline-symbols
     source-han-sans
     source-han-serif
+    # (import ./fonts/electroharmonics { inherit pkgs; })
 
   ];
+  #  fonts.enableFontDir = true;
 
 }
 
