@@ -31,11 +31,13 @@
         inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    affinity-nix.url = "github:mrshmllow/affinity-nix";
+
   };
 
   #inputs.ryujinx.url = "github:Naxdy/Ryujinx";
 
-  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, hyprland-plugins, split-monitor-workspaces, lsfg-vk-flake, ... }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-stable, home-manager, hyprland-plugins, split-monitor-workspaces, lsfg-vk-flake, affinity-nix, ... }@inputs:
 
     let
       system = "x86_64-linux";
@@ -60,7 +62,11 @@
     homeConfigurations.kim = home-manager.lib.homeManagerConfiguration {
         pkgs = nixpkgs.legacyPackages.${system};
         extraSpecialArgs = { inherit inputs; };
-      modules = [ ./home-manager/home.nix ];
+        modules = [ ./home-manager/home.nix 
+          {
+              home.packages = [affinity-nix.packages.x86_64-linux.v3];
+          }
+        ];
     };
   };
 }

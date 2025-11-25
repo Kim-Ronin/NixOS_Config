@@ -1,6 +1,6 @@
 {
   imports = [
-     ./lualine.nix
+    # ./lualine.nix
     ./transparent.nix
     ./neotree.nix
      ./webdevicons.nix

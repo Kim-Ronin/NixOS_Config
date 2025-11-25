@@ -45,7 +45,7 @@ services.lsfg-vk = {
 
   environment.systemPackages = with pkgs; [
     # Desktop apps
-    # alacritty
+    davinci-resolve
     ghostty
     kdePackages.kate
     telegram-desktop
