@@ -1,1 +1,1 @@
-NixOS Config V0.022
+NixOS Config V0.023
