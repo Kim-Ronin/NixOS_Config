@@ -10,7 +10,7 @@
     # hyprwinwrap
     #  hyprexpo
     #  hy3
-    inputs.split-monitor-workspaces.packages.${pkgs.system}.split-monitor-workspaces
+      #   inputs.split-monitor-workspaces.packages.${pkgs.system}.split-monitor-workspaces
     ];
       
     settings = {
@@ -42,7 +42,7 @@
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
         "XCURSOR_SIZE,24"
-        # "QT_QPA_PLATFORM,qt6ct"
+        #  "QT_QPA_PLATFORM,wayland"
         #"QT_STYLE_OVERRIDE,kvantum"
         "XDG_SCREENSHOTS_DIR,~/screens"
         "WLR_DRM_DEVICES.$HOME/.config/hypr/card"

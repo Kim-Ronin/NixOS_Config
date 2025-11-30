@@ -45,8 +45,10 @@ services.lsfg-vk = {
 
   environment.systemPackages = with pkgs; [
     # Desktop apps
-    davinci-resolve
+    audacity
+    blender
     ghostty
+    #  davinci-resolve-studio
     kdePackages.kate
     telegram-desktop
     rofi
@@ -98,6 +100,7 @@ services.lsfg-vk = {
     kdePackages.qt6ct
     hyprland-qt-support
     protonplus
+    libva-utils
 
 
     #RazerStuff
