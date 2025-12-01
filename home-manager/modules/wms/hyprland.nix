@@ -10,7 +10,7 @@
     # hyprwinwrap
     #  hyprexpo
     #  hy3
-      #   inputs.split-monitor-workspaces.packages.${pkgs.system}.split-monitor-workspaces
+         inputs.split-monitor-workspaces.packages.${pkgs.system}.split-monitor-workspaces
     ];
       
     settings = {
