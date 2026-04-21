@@ -4,7 +4,7 @@
     treesitter = {
       enable = true;
       nixvimInjections = true;
-      folding = true;
+      folding.enable = true;
      # indent = true;
     };
 
@@ -14,15 +14,15 @@
    };
 
 
-    treesitter-refactor = {
-      enable = true;
-      settings.highlightDefinitions = {
-        enable = true;
-        clear_on_cursor_move = false;
+    #  treesitter-refactor = {
+    #  enable = true;
+    #  settings.highlightDefinitions = {
+    #    enable = true;
+    #   clear_on_cursor_move = false;
         # Set to false if you have an `updatetime` of ~100.
       
-      };
-    };
+    #   };
+    #  };
 
     hmts.enable = true;
 

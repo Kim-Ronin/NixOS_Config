@@ -73,11 +73,11 @@ services.lsfg-vk = {
     bottles
     lutris
     winetricks
-    wineWowPackages.stable
-    wineWowPackages.waylandFull
+    wineWow64Packages.unstable
+    wineWow64Packages.waylandFull
     lshw
     vlc
-    xfce.xfce4-taskmanager
+    xfce4-taskmanager
     p7zip
     hwinfo
     vkbasalt
@@ -89,7 +89,7 @@ services.lsfg-vk = {
     usbutils
     util-linux
     parted
-    unrar_6
+    unrar
     dbus
     usbview
     radeontop
@@ -101,6 +101,8 @@ services.lsfg-vk = {
     hyprland-qt-support
     protonplus
     libva-utils
+    protontricks
+    shadps4
 
 
     #RazerStuff
@@ -134,7 +136,7 @@ services.lsfg-vk = {
     unzip
     scrot
     ffmpeg
-    light
+    # light
     lux
     mediainfo
     ranger
@@ -142,7 +144,7 @@ services.lsfg-vk = {
     ntfs3g
     yt-dlp
     brightnessctl
-    swww
+    awww
 
 
 

@@ -10,7 +10,7 @@
     # hyprwinwrap
     #  hyprexpo
     #  hy3
-         inputs.split-monitor-workspaces.packages.${pkgs.system}.split-monitor-workspaces
+#    inputs.split-monitor-workspaces.packages.${pkgs.system}.split-monitor-workspaces
     ];
       
     settings = {
@@ -138,8 +138,8 @@
       
 
       exec-once = [
-        "swww-daemon &"
-        "swww img ~/Pictures/1014191.jpg"
+        "awww-daemon &"
+        "awww img ~/Pictures/1014191.jpg"
         "waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
